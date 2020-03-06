@@ -2,6 +2,42 @@
 
 All Notable changes to `League\Uri\Components` will be documented in this file
 
+## 2.2.1 - 2020-02-09
+
+### Added 
+
+- None
+
+### Fixed
+
+- back port improvement made to `DataUri` by [#154](https://github.com/thephpleague/uri/issues/154) thanks to [Nicolas Grekas](https://github.com/nicolas-grekas)
+
+### Deprecated
+
+- None
+
+### Remove
+
+- None
+
+## 2.2.0 - 2020-02-08
+
+### Added 
+
+- None
+
+### Fixed
+
+- back port improvement made to `idn_to_ascii` usage see [#150](https://github.com/thephpleague/uri/issues/150) thanks to [ntzm](https://github.com/ntzm)
+
+### Deprecated
+
+- None
+
+### Remove
+
+- Hard dependencies on the `ext-fileinfo` PHP extensions see [#154](https://github.com/thephpleague/uri/pull/154) thanks [Nicolas Grekas](https://github.com/nicolas-grekas)
+
 ## 2.1.0 - 2019-12-19
 
 ### Added 

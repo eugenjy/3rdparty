@@ -45,6 +45,6 @@
 		"symfony/routing": "4.3.4",
 		"symfony/translation": "4.3.4",
 		"php-http/guzzle6-adapter": "^2.0",
-		"web-auth/webauthn-lib": "^3.0"
+		"web-auth/webauthn-lib": "^3.1"
 	}
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e94d487862c5f94ca203a76d90bbe388",
+    "content-hash": "77286d99c3c248c47cef7a1457d6e487",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -1814,23 +1814,21 @@
         },
         {
             "name": "league/uri",
-            "version": "6.0.1",
+            "version": "6.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/uri.git",
-                "reference": "cf488ec34faa3b5c600659c8fc18d67c4752a5cb"
+                "reference": "7b29ca33b287b4277d5ce7c26bc1be5d4118b484"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/uri/zipball/cf488ec34faa3b5c600659c8fc18d67c4752a5cb",
-                "reference": "cf488ec34faa3b5c600659c8fc18d67c4752a5cb",
+                "url": "https://api.github.com/repos/thephpleague/uri/zipball/7b29ca33b287b4277d5ce7c26bc1be5d4118b484",
+                "reference": "7b29ca33b287b4277d5ce7c26bc1be5d4118b484",
                 "shasum": ""
             },
             "require": {
-                "ext-fileinfo": "*",
                 "ext-json": "*",
-                "ext-mbstring": "*",
-                "league/uri-interfaces": "^2.0",
+                "league/uri-interfaces": "^2.1",
                 "php": "^7.2",
                 "psr/http-message": "^1.0"
             },
@@ -1838,20 +1836,21 @@
                 "league/uri-schemes": "^1.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.0",
-                "phpstan/phpstan": "^0.11",
-                "phpstan/phpstan-phpunit": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11",
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12",
                 "phpunit/phpunit": "^7.0 | ^8.0"
             },
             "suggest": {
+                "ext-fileinfo": "Needed to create Data URI from a filepath",
                 "ext-intl": "Needed to improve host validation",
                 "league/uri-components": "Needed to easily manipulate URI objects"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.x-dev"
+                    "dev-master": "6.x-dev"
                 }
             },
             "autoload": {
@@ -1887,44 +1886,46 @@
                 "querystring",
                 "rfc3986",
                 "rfc3987",
+                "rfc6570",
                 "uri",
+                "uri-template",
                 "url",
                 "ws"
             ],
-            "time": "2019-11-23T20:59:00+00:00"
+            "time": "2020-02-08T16:31:57+00:00"
         },
         {
             "name": "league/uri-components",
-            "version": "2.1.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/uri-components.git",
-                "reference": "cecbcb1af3a61e40a50b3582056cc5d7a1e9c650"
+                "reference": "14bab20b05bc20d16dec17401a9027c679412589"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/uri-components/zipball/cecbcb1af3a61e40a50b3582056cc5d7a1e9c650",
-                "reference": "cecbcb1af3a61e40a50b3582056cc5d7a1e9c650",
+                "url": "https://api.github.com/repos/thephpleague/uri-components/zipball/14bab20b05bc20d16dec17401a9027c679412589",
+                "reference": "14bab20b05bc20d16dec17401a9027c679412589",
                 "shasum": ""
             },
             "require": {
-                "ext-fileinfo": "*",
                 "ext-json": "*",
-                "league/uri-interfaces": "^2.0",
+                "league/uri-interfaces": "^2.1",
                 "php": "^7.2",
                 "psr/http-message": "^1.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.3",
                 "guzzlehttp/psr7": "^1.4",
+                "laminas/laminas-diactoros": "^2.0",
                 "league/uri": "^6.0",
                 "phpstan/phpstan": "^0.12",
                 "phpstan/phpstan-phpunit": "^0.12",
                 "phpstan/phpstan-strict-rules": "^0.12",
-                "phpunit/phpunit": "^7.0 | ^8.0",
-                "zendframework/zend-diactoros": "^2.0"
+                "phpunit/phpunit": "^7.0 | ^8.0"
             },
             "suggest": {
+                "ext-fileinfo": "Needed to create Data URI from a filepath",
                 "ext-gmp": "to improve handle IPV4 parsing",
                 "ext-intl": "to handle IDN host",
                 "jeremykendall/php-domain-parser": "Public Suffix and Top Level Domain parsing implemented in PHP",
@@ -1970,20 +1971,20 @@
                 "url",
                 "userinfo"
             ],
-            "time": "2019-12-19T20:22:58+00:00"
+            "time": "2020-02-09T19:44:04+00:00"
         },
         {
             "name": "league/uri-interfaces",
-            "version": "2.0.1",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/uri-interfaces.git",
-                "reference": "ae2601a183ad14b73628a305c0f906c030757b39"
+                "reference": "0068a469958895ceaf3afcb489c0258adfa1e406"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/uri-interfaces/zipball/ae2601a183ad14b73628a305c0f906c030757b39",
-                "reference": "ae2601a183ad14b73628a305c0f906c030757b39",
+                "url": "https://api.github.com/repos/thephpleague/uri-interfaces/zipball/0068a469958895ceaf3afcb489c0258adfa1e406",
+                "reference": "0068a469958895ceaf3afcb489c0258adfa1e406",
                 "shasum": ""
             },
             "require": {
@@ -1992,9 +1993,9 @@
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.0",
-                "phpstan/phpstan": "^0.11",
-                "phpstan/phpstan-phpunit": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12",
                 "phpunit/phpunit": "^7.0|^8.0"
             },
             "type": "library",
@@ -2027,7 +2028,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2019-12-17T13:59:29+00:00"
+            "time": "2020-02-08T12:10:37+00:00"
         },
         {
             "name": "microsoft/azure-storage-blob",
@@ -3163,16 +3164,16 @@
         },
         {
             "name": "psr/log",
-            "version": "1.1.0",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd"
+                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
-                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/446d54b4cb6bf489fc9d75f55843658e6f25d801",
+                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801",
                 "shasum": ""
             },
             "require": {
@@ -3181,7 +3182,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -3206,7 +3207,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2018-11-20T15:27:04+00:00"
+            "time": "2019-11-01T11:05:21+00:00"
         },
         {
             "name": "punic/punic",
@@ -3315,16 +3316,16 @@
         },
         {
             "name": "ramsey/uuid",
-            "version": "3.9.2",
+            "version": "3.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "7779489a47d443f845271badbdcedfe4df8e06fb"
+                "reference": "7e1633a6964b48589b142d60542f9ed31bd37a92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/7779489a47d443f845271badbdcedfe4df8e06fb",
-                "reference": "7779489a47d443f845271badbdcedfe4df8e06fb",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/7e1633a6964b48589b142d60542f9ed31bd37a92",
+                "reference": "7e1633a6964b48589b142d60542f9ed31bd37a92",
                 "shasum": ""
             },
             "require": {
@@ -3398,7 +3399,7 @@
                 "identifier",
                 "uuid"
             ],
-            "time": "2019-12-17T08:18:51+00:00"
+            "time": "2020-02-21T04:36:14+00:00"
         },
         {
             "name": "react/promise",
@@ -3964,16 +3965,16 @@
         },
         {
             "name": "spomky-labs/cbor-php",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Spomky-Labs/cbor-php.git",
-                "reference": "f937d527b05bb3ec3f6b8670ece38ccaf9a0eddd"
+                "reference": "575a66dc406575b030e3ba541b33447842f93185"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Spomky-Labs/cbor-php/zipball/f937d527b05bb3ec3f6b8670ece38ccaf9a0eddd",
-                "reference": "f937d527b05bb3ec3f6b8670ece38ccaf9a0eddd",
+                "url": "https://api.github.com/repos/Spomky-Labs/cbor-php/zipball/575a66dc406575b030e3ba541b33447842f93185",
+                "reference": "575a66dc406575b030e3ba541b33447842f93185",
                 "shasum": ""
             },
             "require": {
@@ -3984,13 +3985,14 @@
             },
             "require-dev": {
                 "php-coveralls/php-coveralls": "^2.0",
-                "phpstan/phpstan": "^0.11",
-                "phpstan/phpstan-beberlei-assert": "^0.11.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-phpunit": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-beberlei-assert": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12",
                 "phpunit/phpunit": "^7.5|^8.0",
-                "rector/rector": "^0.5"
+                "rector/rector": "^0.5|^0.6",
+                "symfony/var-dumper": "^4.3|^5.0"
             },
             "suggest": {
                 "ext-bcmath": "BCMath extension needed to handle the Big Float and Decimal Fraction Tags"
@@ -4026,7 +4028,7 @@
                 "RFC7049",
                 "cbor"
             ],
-            "time": "2019-08-15T14:53:55+00:00"
+            "time": "2020-02-18T08:37:37+00:00"
         },
         {
             "name": "stecman/symfony-console-completion",
@@ -4340,16 +4342,16 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.13.1",
+            "version": "v1.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "f8f0b461be3385e56d6de3dbb5a0df24c0c275e3"
+                "reference": "fbdeaec0df06cf3d51c93de80c7eb76e271f5a38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/f8f0b461be3385e56d6de3dbb5a0df24c0c275e3",
-                "reference": "f8f0b461be3385e56d6de3dbb5a0df24c0c275e3",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/fbdeaec0df06cf3d51c93de80c7eb76e271f5a38",
+                "reference": "fbdeaec0df06cf3d51c93de80c7eb76e271f5a38",
                 "shasum": ""
             },
             "require": {
@@ -4361,7 +4363,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.13-dev"
+                    "dev-master": "1.14-dev"
                 }
             },
             "autoload": {
@@ -4394,7 +4396,7 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2019-11-27T13:56:44+00:00"
+            "time": "2020-01-13T11:15:53+00:00"
         },
         {
             "name": "symfony/polyfill-iconv",
@@ -5115,16 +5117,16 @@
         },
         {
             "name": "web-auth/cose-lib",
-            "version": "v3.0.1",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-auth/cose-lib.git",
-                "reference": "db6bbed10f45be572454ba854c38e9e081dd2e7c"
+                "reference": "bc28b39608b0674546d89318e55fb37eaec1a9e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-auth/cose-lib/zipball/db6bbed10f45be572454ba854c38e9e081dd2e7c",
-                "reference": "db6bbed10f45be572454ba854c38e9e081dd2e7c",
+                "url": "https://api.github.com/repos/web-auth/cose-lib/zipball/bc28b39608b0674546d89318e55fb37eaec1a9e9",
+                "reference": "bc28b39608b0674546d89318e55fb37eaec1a9e9",
                 "shasum": ""
             },
             "require": {
@@ -5171,20 +5173,20 @@
                 "COSE",
                 "RFC8152"
             ],
-            "time": "2020-01-02T23:13:49+00:00"
+            "time": "2020-02-03T21:25:10+00:00"
         },
         {
             "name": "web-auth/metadata-service",
-            "version": "v3.0.1",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-auth/webauthn-metadata-service.git",
-                "reference": "b4139b4caf08d6b3a4f200b8ce96890527e69404"
+                "reference": "0e9d9b85590a0c5155b99d9a4b5bdaa01b1748e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-auth/webauthn-metadata-service/zipball/b4139b4caf08d6b3a4f200b8ce96890527e69404",
-                "reference": "b4139b4caf08d6b3a4f200b8ce96890527e69404",
+                "url": "https://api.github.com/repos/web-auth/webauthn-metadata-service/zipball/0e9d9b85590a0c5155b99d9a4b5bdaa01b1748e3",
+                "reference": "0e9d9b85590a0c5155b99d9a4b5bdaa01b1748e3",
                 "shasum": ""
             },
             "require": {
@@ -5233,20 +5235,20 @@
                 "fido",
                 "webauthn"
             ],
-            "time": "2020-01-04T12:32:26+00:00"
+            "time": "2020-02-03T20:09:52+00:00"
         },
         {
             "name": "web-auth/webauthn-lib",
-            "version": "v3.0.1",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-auth/webauthn-lib.git",
-                "reference": "217933e741f8fcea8cb77c1578419d65e45a3e35"
+                "reference": "a8a11bc30480e98768987fe0fc266aef08ec99da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-auth/webauthn-lib/zipball/217933e741f8fcea8cb77c1578419d65e45a3e35",
-                "reference": "217933e741f8fcea8cb77c1578419d65e45a3e35",
+                "url": "https://api.github.com/repos/web-auth/webauthn-lib/zipball/a8a11bc30480e98768987fe0fc266aef08ec99da",
+                "reference": "a8a11bc30480e98768987fe0fc266aef08ec99da",
                 "shasum": ""
             },
             "require": {
@@ -5309,7 +5311,7 @@
                 "fido",
                 "webauthn"
             ],
-            "time": "2020-01-07T12:56:26+00:00"
+            "time": "2020-02-03T21:25:10+00:00"
         }
     ],
     "packages-dev": [],
